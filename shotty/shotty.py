@@ -102,7 +102,7 @@ def create_snapshots(project):
             if has_pending_snapshot(v):
                 print(" Skipping {0}, snapshot already in progress".format(v.id))
                 continue
-                
+
             print("Creating snapshot of {0}".format(v.id))
             v.create_snapshot(Description="Created by Snapshotalyzer 30000")
 
